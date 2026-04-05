@@ -1,0 +1,212 @@
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--border-color);
+  padding: 88px 40px;
+  margin: 0 0 56px 0;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.18) 0%, rgba(14, 165, 233, 0.12) 40%, rgba(255, 255, 255, 0) 100%);
+}
+
+.hero p {
+  position: relative;
+  z-index: 1;
+  font-size: 1.1rem;
+  color: var(--text-body);
+  max-width: 640px;
+  margin: 16px auto 28px;
+  line-height: 1.7;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.hero h1 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: 3.25rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text-main);
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 999px;
+  padding: 14px 22px;
+  background: var(--primary);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: var(--shadow-card);
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-button:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Template Grid */
+.template-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 32px;
+}
+
+.template-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  cursor: pointer;
+  box-shadow: var(--shadow-card);
+}
+
+.template-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(99, 102, 241, 0.35);
+}
+
+.template-image {
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.template-overlay {
+  position: absolute;
+  top: 0;
+
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(17, 24, 39, 0.55);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.template-card:hover .template-overlay {
+  opacity: 1;
+}
+
+.template-overlay span {
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 24px;
+  background: var(--primary);
+  border-radius: 50px;
+  box-shadow: var(--shadow-lg);
+  transform: translateY(10px);
+  transition: transform 0.3s ease;
+}
+
+.template-card:hover .template-overlay span {
+  transform: translateY(0);
+}
+
+.template-info {
+  padding: 24px;
+}
+
+.template-info h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.template-info p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* User Creations Section */
+.user-creations {
+  margin-bottom: 56px;
+  padding: 32px;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-card);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+}
+
+.user-design-preview {
+  background: linear-gradient(135deg, var(--bg-card) 0%, #1e293b 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.user-design-preview::before {
+  content: "✨";
+  font-size: 4rem;
+  opacity: 0.2;
+}
+
+.templates-section {
+  margin-top: 40px;
+}
+
+.loading-designs, .empty-msg {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+.user-creations.empty {
+  opacity: 0.6;
+}
+
+/* AI Dashboard Integration Style */
+.ai-dashboard-container {
+  margin-bottom: 60px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 32px;
+  text-align: center;
+  box-shadow: var(--shadow-card);
+}

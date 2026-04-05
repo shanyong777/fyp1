@@ -1,0 +1,40 @@
+:root {
+    --bg-light: #f9fafb;
+    --bg-card-light: #ffffff;
+    --text-main-light: #111827;
+    --text-body-light: #4b5563;
+    --text-muted-light: #6b7280;
+    --border-light: rgba(15, 23, 42, 0.08);
+
+    --bg-dark: #0b1220;
+    --bg-card-dark: rgba(17, 24, 39, 0.75);
+    --text-main-dark: #f3f4f6;
+    --text-body-dark: #cbd5e1;
+    --text-muted-dark: #94a3b8;
+    --border-dark: rgba(148, 163, 184, 0.16);
+
+    --primary: #6366f1;
+    --primary-hover: #4f46e5;
+    --secondary: #0ea5e9;
+    --accent-color: var(--primary);
+
+    --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --h1-size: 3rem;
+    --h2-size: 2.25rem;
+    --h3-size: 1.5rem;
+    --h4-size: 1.25rem;
+    --body-text: 1rem;
+
+    --radius-sm: 12px;
+    --radius: 16px;
+    --radius-md: 16px;
+    --radius-lg: 20px;
+
+    --bg-surface: rgba(17, 24, 39, 0.04);
+    --bg-glass: rgba(255, 255, 255, 0.75);
+
+    --shadow-card: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 8px 18px rgba(15, 23, 42, 0.08);
+    --shadow-lg: 0 18px 40px rgba(15, 23, 42, 0.14);
+    --shadow-glow: 0 18px 48px rgba(99, 102, 241, 0.18);
+}

@@ -1,0 +1,44 @@
+.footer {
+  background: var(--bg-card);
+  color: var(--text-muted);
+  padding: 2rem 0;
+  border-top: 1px solid var(--border-color);
+  margin-top: 32px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.footer-contact h3,
+.footer-social h3 {
+  color: var(--text-main);
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon-link {
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-icon-link:hover {
+  color: var(--primary);
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
